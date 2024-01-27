@@ -50,6 +50,7 @@ namespace Completed
             Player hitPlayer = component as Player;
             hitPlayer.LoseFood (playerDamage);
             animator.SetTrigger ("enemyAttack");
+            SoundManager.instance.RandomizeSfx(attackSound1, attackSound2);
         }
     }
 }

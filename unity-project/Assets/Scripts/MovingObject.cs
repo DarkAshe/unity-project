@@ -9,12 +9,12 @@ public abstract class MovingObject : MonoBehaviour
     private BoxCollider2D boxCollider;
     private Rigidbody2D rb2D;
     private float inverseMoveTime;
-    // Start is called before the first frame update
+    // Start is called before the first frame update f
     protected virtual void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
         rb2D = GetComponent<Rigidbody2D>();
-        inverseMoveTime = 1f / moveTime;
+        inverseMoveTime = 6f / moveTime;
     }
 
     protected bool Move(int xDir, int yDir, out RaycastHit2D hit)
